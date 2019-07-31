@@ -36,4 +36,4 @@ set expandtab
 inoremap jj <Esc>
 
 " 自动完成大括号
-imap { {<CR>}<Esc>kA<CR>
+" imap { {<CR>}<Esc>kA<CR>
