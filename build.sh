@@ -30,3 +30,4 @@ else
 fi
 
 cp plugin ~/.vim/ -rfd
+

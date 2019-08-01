@@ -2,7 +2,7 @@ set nu
 set hlsearch
 " 设置字符编码
 set fileencoding=utf-8
-set fileencodings=utf-8,gb2312,gb18030,latin1,gbk,cp936,gb18030m
+set fileencodings=utf-8,gb2312,gb18030,latin1
 set termencoding=utf-8
 set encoding=utf-8
 
