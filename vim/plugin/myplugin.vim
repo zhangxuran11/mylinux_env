@@ -32,8 +32,35 @@ set cindent
 " tab转换为空格
 set expandtab
 
+
+
+set helplang=cn
+syntax enable
+syntax on
+
+" 启用taglist 
+let Tlist_Show_One_File=1 
+let Tlist_Exit_OnlyWindow=1 
+
+" 启用winmanager
+let g:winManagerWindowLayout='FileExplorer|TagList' 
+nmap wm :WMToggle<cr>
+
+" 配置cscope
+set cscopequickfix=s-,c-,d-,i-,t-,e- 
 " 将ESC键映射为两次j键
 inoremap jj <Esc>
+
+set nocompatible
+filetype off
+ 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Bundle 'Valloric/YouCompleteMe'
+call vundle#end()    
+filetype plugin indent on
+
 
 " 自动完成大括号
 " imap { {<CR>}<Esc>kA<CR>
