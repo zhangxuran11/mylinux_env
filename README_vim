@@ -19,3 +19,5 @@ zd  删除光标下的折叠   
 zD  删除光标下的折叠以及嵌套的折叠   
 zE 删除所有折叠标签
 #创建的折叠当退出vim之后就失效了
+
+ctags --c++-kinds=+p --fields=+iaS --extra=+q -R *

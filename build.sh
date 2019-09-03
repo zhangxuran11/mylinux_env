@@ -68,3 +68,8 @@ cp doc plugin ~/.vim/ -rfd
 popd
 
 popd
+
+grep ctags+ ~/.profile
+if [ $? == 1 ];then
+echo "alias ctags+='ctags --c++-kinds=+p --fields=+iaS --extra=+q -R'" >> ~/.profile
+fi
