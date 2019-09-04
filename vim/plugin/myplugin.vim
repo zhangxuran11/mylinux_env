@@ -1,5 +1,3 @@
-set nu
-set hlsearch
 " 设置字符编码
 set fileencoding=utf-8
 set fileencodings=utf-8,gb2312,gb18030,latin1
@@ -15,8 +13,9 @@ filetype on
 " 根据文件类型加载对应的插件
 filetype plugin on
 
-" 显示行号
-set number
+set nu
+set hlsearch
+set smarttab
 " 在第64列显示竖线
 set cc=64
 " 高亮显示当前行
@@ -49,6 +48,10 @@ let Tlist_Exit_OnlyWindow=1
 " 启用winmanager
 let g:winManagerWindowLayout='FileExplorer|TagList' 
 nmap wm :WMToggle<cr>
+
+
+"nnoremap <silent> <F12>:A<CR> 
+
 
 " 配置cscope
 set cscopequickfix=s-,c-,d-,i-,t-,e- 
