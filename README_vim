@@ -21,5 +21,11 @@ zE 删除所有折叠标签
 #创建的折叠当退出vim之后就失效了
 
 ctags --c++-kinds=+p --fields=+iaS --extra=+q -R *
+建立符号表(在代码顶层目录):
+source ~/.profile
+ctags+ ×
+
+自动补全:
+建立最新符号表后,在输入.或者->后自动弹出补全选项
 
 引用 https://blog.csdn.net/lhf_tiger/article/details/7216500
