@@ -21,3 +21,5 @@ zE 删除所有折叠标签
 #创建的折叠当退出vim之后就失效了
 
 ctags --c++-kinds=+p --fields=+iaS --extra=+q -R *
+
+引用 https://blog.csdn.net/lhf_tiger/article/details/7216500
