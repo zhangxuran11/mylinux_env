@@ -69,6 +69,12 @@ popd
 
 popd
 
+valgrind --version 2>/dev/null 1>&2
+if [ $? != 0 ];then
+    sudo apt install valgrind
+fi
+
+
 grep ctags+ ~/.profile
 if [ $? == 1 ];then
 echo "alias ctags+='ctags --c++-kinds=+p --fields=+iaS --extra=+q -R'" >> ~/.profile
